@@ -28,6 +28,7 @@ public class SupplierController {
         Optional<Supplier> optionalSupplier = Optional.ofNullable(iSupplierService.insert(supplier.getSupplier()));
         return ResponseEntity.status(HttpStatus.OK).body(
                 new ResponseObject("ok","successfully",optionalSupplier)
+
         );
     }
 
